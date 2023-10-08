@@ -14,17 +14,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      
-      <body suppressHydrationWarning={true} className={inter.className} > 
-    
-    <div className='containerBody'>
-       <NavBar />
-        {children}
-        <Footer/>
-    </div>
-        
-
-      </body>
+     <body suppressHydrationWarning={true} className={inter.className} > 
+       <div className='containerBody'>
+         <NavBar />
+          {children}
+         <Footer/>
+       </div>
+     </body>
     </html>
   )
 }
